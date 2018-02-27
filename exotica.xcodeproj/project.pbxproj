@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5A3091B20454DA7006BB7AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3091A20454DA7006BB7AA /* AppDelegate.swift */; };
+		D5A3091D20454DA7006BB7AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3091C20454DA7006BB7AA /* ViewController.swift */; };
+		D5A3092020454DA7006BB7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A3091E20454DA7006BB7AA /* Main.storyboard */; };
+		D5A3092220454DA7006BB7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A3092120454DA7006BB7AA /* Assets.xcassets */; };
+		D5A3092520454DA7006BB7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A3092320454DA7006BB7AA /* LaunchScreen.storyboard */; };
+		D5A3093020454DA7006BB7AA /* exoticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3092F20454DA7006BB7AA /* exoticaTests.swift */; };
+		D5A3093B20454DA7006BB7AA /* exoticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3093A20454DA7006BB7AA /* exoticaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5A3092C20454DA7006BB7AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5A3090F20454DA7006BB7AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5A3091620454DA7006BB7AA;
+			remoteInfo = exotica;
+		};
+		D5A3093720454DA7006BB7AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5A3090F20454DA7006BB7AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5A3091620454DA7006BB7AA;
+			remoteInfo = exotica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5A3091720454DA7006BB7AA /* exotica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exotica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A3091A20454DA7006BB7AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5A3091C20454DA7006BB7AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5A3091F20454DA7006BB7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5A3092120454DA7006BB7AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5A3092420454DA7006BB7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5A3092620454DA7006BB7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A3092B20454DA7006BB7AA /* exoticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exoticaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A3092F20454DA7006BB7AA /* exoticaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exoticaTests.swift; sourceTree = "<group>"; };
+		D5A3093120454DA7006BB7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A3093620454DA7006BB7AA /* exoticaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exoticaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A3093A20454DA7006BB7AA /* exoticaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exoticaUITests.swift; sourceTree = "<group>"; };
+		D5A3093C20454DA7006BB7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5A3091420454DA7006BB7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A3092820454DA7006BB7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A3093320454DA7006BB7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5A3090E20454DA7006BB7AA = {
+			isa = PBXGroup;
+			children = (
+				D5A3091920454DA7006BB7AA /* exotica */,
+				D5A3092E20454DA7006BB7AA /* exoticaTests */,
+				D5A3093920454DA7006BB7AA /* exoticaUITests */,
+				D5A3091820454DA7006BB7AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5A3091820454DA7006BB7AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5A3091720454DA7006BB7AA /* exotica.app */,
+				D5A3092B20454DA7006BB7AA /* exoticaTests.xctest */,
+				D5A3093620454DA7006BB7AA /* exoticaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5A3091920454DA7006BB7AA /* exotica */ = {
+			isa = PBXGroup;
+			children = (
+				D5A3091A20454DA7006BB7AA /* AppDelegate.swift */,
+				D5A3091C20454DA7006BB7AA /* ViewController.swift */,
+				D5A3091E20454DA7006BB7AA /* Main.storyboard */,
+				D5A3092120454DA7006BB7AA /* Assets.xcassets */,
+				D5A3092320454DA7006BB7AA /* LaunchScreen.storyboard */,
+				D5A3092620454DA7006BB7AA /* Info.plist */,
+			);
+			path = exotica;
+			sourceTree = "<group>";
+		};
+		D5A3092E20454DA7006BB7AA /* exoticaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5A3092F20454DA7006BB7AA /* exoticaTests.swift */,
+				D5A3093120454DA7006BB7AA /* Info.plist */,
+			);
+			path = exoticaTests;
+			sourceTree = "<group>";
+		};
+		D5A3093920454DA7006BB7AA /* exoticaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5A3093A20454DA7006BB7AA /* exoticaUITests.swift */,
+				D5A3093C20454DA7006BB7AA /* Info.plist */,
+			);
+			path = exoticaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5A3091620454DA7006BB7AA /* exotica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A3093F20454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exotica" */;
+			buildPhases = (
+				D5A3091320454DA7006BB7AA /* Sources */,
+				D5A3091420454DA7006BB7AA /* Frameworks */,
+				D5A3091520454DA7006BB7AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = exotica;
+			productName = exotica;
+			productReference = D5A3091720454DA7006BB7AA /* exotica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5A3092A20454DA7006BB7AA /* exoticaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A3094220454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exoticaTests" */;
+			buildPhases = (
+				D5A3092720454DA7006BB7AA /* Sources */,
+				D5A3092820454DA7006BB7AA /* Frameworks */,
+				D5A3092920454DA7006BB7AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5A3092D20454DA7006BB7AA /* PBXTargetDependency */,
+			);
+			name = exoticaTests;
+			productName = exoticaTests;
+			productReference = D5A3092B20454DA7006BB7AA /* exoticaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5A3093520454DA7006BB7AA /* exoticaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A3094520454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exoticaUITests" */;
+			buildPhases = (
+				D5A3093220454DA7006BB7AA /* Sources */,
+				D5A3093320454DA7006BB7AA /* Frameworks */,
+				D5A3093420454DA7006BB7AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5A3093820454DA7006BB7AA /* PBXTargetDependency */,
+			);
+			name = exoticaUITests;
+			productName = exoticaUITests;
+			productReference = D5A3093620454DA7006BB7AA /* exoticaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5A3090F20454DA7006BB7AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nick Moignard";
+				TargetAttributes = {
+					D5A3091620454DA7006BB7AA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D5A3092A20454DA7006BB7AA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5A3091620454DA7006BB7AA;
+					};
+					D5A3093520454DA7006BB7AA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5A3091620454DA7006BB7AA;
+					};
+				};
+			};
+			buildConfigurationList = D5A3091220454DA7006BB7AA /* Build configuration list for PBXProject "exotica" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5A3090E20454DA7006BB7AA;
+			productRefGroup = D5A3091820454DA7006BB7AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5A3091620454DA7006BB7AA /* exotica */,
+				D5A3092A20454DA7006BB7AA /* exoticaTests */,
+				D5A3093520454DA7006BB7AA /* exoticaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5A3091520454DA7006BB7AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A3092520454DA7006BB7AA /* LaunchScreen.storyboard in Resources */,
+				D5A3092220454DA7006BB7AA /* Assets.xcassets in Resources */,
+				D5A3092020454DA7006BB7AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A3092920454DA7006BB7AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A3093420454DA7006BB7AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5A3091320454DA7006BB7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A3091D20454DA7006BB7AA /* ViewController.swift in Sources */,
+				D5A3091B20454DA7006BB7AA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A3092720454DA7006BB7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A3093020454DA7006BB7AA /* exoticaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A3093220454DA7006BB7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A3093B20454DA7006BB7AA /* exoticaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5A3092D20454DA7006BB7AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5A3091620454DA7006BB7AA /* exotica */;
+			targetProxy = D5A3092C20454DA7006BB7AA /* PBXContainerItemProxy */;
+		};
+		D5A3093820454DA7006BB7AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5A3091620454DA7006BB7AA /* exotica */;
+			targetProxy = D5A3093720454DA7006BB7AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5A3091E20454DA7006BB7AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A3091F20454DA7006BB7AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5A3092320454DA7006BB7AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A3092420454DA7006BB7AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5A3093D20454DA7006BB7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5A3093E20454DA7006BB7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5A3094020454DA7006BB7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = exotica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nlm.exotica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5A3094120454DA7006BB7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = exotica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nlm.exotica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5A3094320454DA7006BB7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = exoticaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nlm.exoticaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/exotica.app/exotica";
+			};
+			name = Debug;
+		};
+		D5A3094420454DA7006BB7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = exoticaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nlm.exoticaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/exotica.app/exotica";
+			};
+			name = Release;
+		};
+		D5A3094620454DA7006BB7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = exoticaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nlm.exoticaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = exotica;
+			};
+			name = Debug;
+		};
+		D5A3094720454DA7006BB7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = exoticaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nlm.exoticaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = exotica;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5A3091220454DA7006BB7AA /* Build configuration list for PBXProject "exotica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A3093D20454DA7006BB7AA /* Debug */,
+				D5A3093E20454DA7006BB7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A3093F20454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exotica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A3094020454DA7006BB7AA /* Debug */,
+				D5A3094120454DA7006BB7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A3094220454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exoticaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A3094320454DA7006BB7AA /* Debug */,
+				D5A3094420454DA7006BB7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A3094520454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exoticaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A3094620454DA7006BB7AA /* Debug */,
+				D5A3094720454DA7006BB7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5A3090F20454DA7006BB7AA /* Project object */;
+}
