@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23413A0B17AFBAF54D089CE5 /* Pods_exoticaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2184C56A55D87B23F9E69559 /* Pods_exoticaUITests.framework */; };
+		8522ADEAF555B5898D3FFF2A /* Pods_exotica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A08DCB0223BDC4AD9D8857 /* Pods_exotica.framework */; };
+		CD8D6AC3377C3566FE7E6D8F /* Pods_exoticaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DEE478F5B723FEA994DEC9 /* Pods_exoticaTests.framework */; };
 		D5A3091B20454DA7006BB7AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3091A20454DA7006BB7AA /* AppDelegate.swift */; };
 		D5A3091D20454DA7006BB7AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3091C20454DA7006BB7AA /* ViewController.swift */; };
 		D5A3092020454DA7006BB7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A3091E20454DA7006BB7AA /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		D5A3092520454DA7006BB7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A3092320454DA7006BB7AA /* LaunchScreen.storyboard */; };
 		D5A3093020454DA7006BB7AA /* exoticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3092F20454DA7006BB7AA /* exoticaTests.swift */; };
 		D5A3093B20454DA7006BB7AA /* exoticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3093A20454DA7006BB7AA /* exoticaUITests.swift */; };
+		D5A3094920454E14006BB7AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3094820454E14006BB7AA /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03185C2415B4C1F839485A89 /* Pods-exoticaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exoticaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-exoticaTests/Pods-exoticaTests.release.xcconfig"; sourceTree = "<group>"; };
+		2184C56A55D87B23F9E69559 /* Pods_exoticaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exoticaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3037B64C4A7B939D35036CC3 /* Pods-exoticaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exoticaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exoticaUITests/Pods-exoticaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		328DD959940252106193E20D /* Pods-exoticaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exoticaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-exoticaUITests/Pods-exoticaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		35DEE478F5B723FEA994DEC9 /* Pods_exoticaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exoticaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A08DCB0223BDC4AD9D8857 /* Pods_exotica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exotica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E68EBFA4D2E73E6ED519F01 /* Pods-exotica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exotica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exotica/Pods-exotica.debug.xcconfig"; sourceTree = "<group>"; };
+		9A071FF42B57BE0644AF3466 /* Pods-exoticaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exoticaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exoticaTests/Pods-exoticaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D47502370ED86C9BFE9271CF /* Pods-exotica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exotica.release.xcconfig"; path = "Pods/Target Support Files/Pods-exotica/Pods-exotica.release.xcconfig"; sourceTree = "<group>"; };
 		D5A3091720454DA7006BB7AA /* exotica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exotica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A3091A20454DA7006BB7AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5A3091C20454DA7006BB7AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		D5A3093620454DA7006BB7AA /* exoticaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exoticaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A3093A20454DA7006BB7AA /* exoticaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exoticaUITests.swift; sourceTree = "<group>"; };
 		D5A3093C20454DA7006BB7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A3094820454E14006BB7AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8522ADEAF555B5898D3FFF2A /* Pods_exotica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8D6AC3377C3566FE7E6D8F /* Pods_exoticaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23413A0B17AFBAF54D089CE5 /* Pods_exoticaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17F7E7030B4093ADF711170C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E68EBFA4D2E73E6ED519F01 /* Pods-exotica.debug.xcconfig */,
+				D47502370ED86C9BFE9271CF /* Pods-exotica.release.xcconfig */,
+				9A071FF42B57BE0644AF3466 /* Pods-exoticaTests.debug.xcconfig */,
+				03185C2415B4C1F839485A89 /* Pods-exoticaTests.release.xcconfig */,
+				3037B64C4A7B939D35036CC3 /* Pods-exoticaUITests.debug.xcconfig */,
+				328DD959940252106193E20D /* Pods-exoticaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C80DB97682BA94E79F8E1D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49A08DCB0223BDC4AD9D8857 /* Pods_exotica.framework */,
+				35DEE478F5B723FEA994DEC9 /* Pods_exoticaTests.framework */,
+				2184C56A55D87B23F9E69559 /* Pods_exoticaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5A3090E20454DA7006BB7AA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				D5A3092E20454DA7006BB7AA /* exoticaTests */,
 				D5A3093920454DA7006BB7AA /* exoticaUITests */,
 				D5A3091820454DA7006BB7AA /* Products */,
+				17F7E7030B4093ADF711170C /* Pods */,
+				C80DB97682BA94E79F8E1D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +145,7 @@
 				D5A3092120454DA7006BB7AA /* Assets.xcassets */,
 				D5A3092320454DA7006BB7AA /* LaunchScreen.storyboard */,
 				D5A3092620454DA7006BB7AA /* Info.plist */,
+				D5A3094820454E14006BB7AA /* NetworkManager.swift */,
 			);
 			path = exotica;
 			sourceTree = "<group>";
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5A3093F20454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exotica" */;
 			buildPhases = (
+				66D665A7F794A000A321E720 /* [CP] Check Pods Manifest.lock */,
 				D5A3091320454DA7006BB7AA /* Sources */,
 				D5A3091420454DA7006BB7AA /* Frameworks */,
 				D5A3091520454DA7006BB7AA /* Resources */,
+				F1C615C00275133605FA0DB3 /* [CP] Embed Pods Frameworks */,
+				995E8AEEE189CCB851BA8968 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5A3094220454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exoticaTests" */;
 			buildPhases = (
+				1C508556C68FE2D7A5B3018C /* [CP] Check Pods Manifest.lock */,
 				D5A3092720454DA7006BB7AA /* Sources */,
 				D5A3092820454DA7006BB7AA /* Frameworks */,
 				D5A3092920454DA7006BB7AA /* Resources */,
+				8AC30F9C116A0AE8C79E09E7 /* [CP] Embed Pods Frameworks */,
+				216421771FEC07EB8F942369 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5A3094520454DA7006BB7AA /* Build configuration list for PBXNativeTarget "exoticaUITests" */;
 			buildPhases = (
+				9DD7031E81BC3139300C8C41 /* [CP] Check Pods Manifest.lock */,
 				D5A3093220454DA7006BB7AA /* Sources */,
 				D5A3093320454DA7006BB7AA /* Frameworks */,
 				D5A3093420454DA7006BB7AA /* Resources */,
+				B87ED30A5FB7D56135AE92C2 /* [CP] Embed Pods Frameworks */,
+				12DB36E3CB5FF9E432CC5D9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +306,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12DB36E3CB5FF9E432CC5D9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exoticaUITests/Pods-exoticaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C508556C68FE2D7A5B3018C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-exoticaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		216421771FEC07EB8F942369 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exoticaTests/Pods-exoticaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D665A7F794A000A321E720 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-exotica-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC30F9C116A0AE8C79E09E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exoticaTests/Pods-exoticaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		995E8AEEE189CCB851BA8968 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exotica/Pods-exotica-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD7031E81BC3139300C8C41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-exoticaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B87ED30A5FB7D56135AE92C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exoticaUITests/Pods-exoticaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1C615C00275133605FA0DB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-exotica/Pods-exotica-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exotica/Pods-exotica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5A3091320454DA7006BB7AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A3094920454E14006BB7AA /* NetworkManager.swift in Sources */,
 				D5A3091D20454DA7006BB7AA /* ViewController.swift in Sources */,
 				D5A3091B20454DA7006BB7AA /* AppDelegate.swift in Sources */,
 			);
@@ -424,9 +629,11 @@
 		};
 		D5A3094020454DA7006BB7AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E68EBFA4D2E73E6ED519F01 /* Pods-exotica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FZ68P2768;
 				INFOPLIST_FILE = exotica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nlm.exotica;
@@ -438,9 +645,11 @@
 		};
 		D5A3094120454DA7006BB7AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47502370ED86C9BFE9271CF /* Pods-exotica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FZ68P2768;
 				INFOPLIST_FILE = exotica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nlm.exotica;
@@ -452,6 +661,7 @@
 		};
 		D5A3094320454DA7006BB7AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A071FF42B57BE0644AF3466 /* Pods-exoticaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +678,7 @@
 		};
 		D5A3094420454DA7006BB7AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03185C2415B4C1F839485A89 /* Pods-exoticaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +695,7 @@
 		};
 		D5A3094620454DA7006BB7AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3037B64C4A7B939D35036CC3 /* Pods-exoticaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +711,7 @@
 		};
 		D5A3094720454DA7006BB7AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 328DD959940252106193E20D /* Pods-exoticaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
