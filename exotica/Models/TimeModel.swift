@@ -30,6 +30,16 @@ class TimeModel {
         return dateFormatter.date(from: _time)
     }
     
+
+    public func dateToDescription (date: Date) -> String {
+        var _dateFormatter = DateFormatter()
+        _dateFormatter.dateFormat = "EEEE - dd MMM"
+        
+        return _dateFormatter.string(from: date)
+        
+    }
+    
+    
     public func stringToDate (time: String) -> Date {
         var _time = time
         _time.removeLast(5)

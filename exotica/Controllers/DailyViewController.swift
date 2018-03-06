@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class ViewController: UIViewController, UITableViewDataSource {
+class DailyViewController: UIViewController, UITableViewDataSource {
     private var setTimes: [SetTime] = [], dancers: [Dancer] = [], stages: [Stage] = []
     private var timeModel = TimeModel()
     private var sections = [Date: [SetTime]]()
@@ -58,10 +58,10 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "Tues-06/03"
         tableView.dataSource = self
         
-        
+        print("something")
         // Grab info from server
         let network = NetworkManager()
         network.getItems(db: .stages) {

@@ -89,7 +89,7 @@ class NetworkManager {
     }
     
     private func createURL(db: Table = Table.setTimes, json: Bool = true) -> String {
-        var baseUrl = "http://52.64.174.22:3000/api/v1"
+        var baseUrl = "http://localhost:3000/api/v1"
         switch db {
             case .dancers:
                 baseUrl += "/dancers"
