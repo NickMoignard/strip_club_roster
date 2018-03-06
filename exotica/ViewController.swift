@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource {
             }
             sections[set.time]!.append(set) // group by time
         }
-        print(sections)
+//        print(sections)
         self.reloadData()
     }
         

@@ -18,7 +18,19 @@ class TimeModel {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ss"
     }
     
-    public func stringToDate (_ time: String) -> Date {
+    public func stringToDateForSetTimeStruct(time: String) -> Date? {
+        var _time = time
+        _time.removeLast(5)
+//        if (_time != "") {
+//            _time.removeLast(5)
+//            print(_time)
+//            return dateFormatter.date(from: _time)!
+//        }
+        
+        return dateFormatter.date(from: _time)
+    }
+    
+    public func stringToDate (time: String) -> Date {
         var _time = time
         _time.removeLast(5)
         return dateFormatter.date(from: _time)!

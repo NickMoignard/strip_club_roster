@@ -71,7 +71,7 @@ class NetworkManager {
         
         if let data = response.data {
             if let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments )  {
-                print("create JSON object with: \(json)")
+//                print("create JSON object with: \(json)")
                 return json as? JSON
             } else {
                 print("the JSON object was not created")
@@ -154,18 +154,19 @@ class NetworkManager {
                 }
 
                 for item in jsonArray  {
-                    print("\(item)")
-                    var id:Int = 0, stageId:Int = 0, dancerId: Int = 0, timeString = "", timeDate = Date()
+//                    print("\(item)")
+                    var id:Int = 0, stageId:Int = 0, dancerId: Int = 0, timeString = ""
                     if ( item["id"].int != nil ) { id += item["id"].int! }
                     if ( item["stage_id"].int != nil ) { stageId += item["stage_id"].int! }
                     if ( item["dancer_id"].int != nil ) { dancerId += item["dancer_id"].int! }
                     if ( item["time"].string != nil ) { timeString += item["time"].string! }
                     
-
-                    timeDate = timeModel.stringToDate(timeString)
+                    if let _timeDate = timeModel.stringToDateForSetTimeStruct(time: timeString) {
+                        let setTime = SetTime(id: id, stage_id: stageId, dancer_id: dancerId, time: _timeDate)
+                        setTimes.append(setTime)
+                        
+                    }
                     
-                    let setTime = SetTime(id: id, stage_id: stageId, dancer_id: dancerId, time: timeDate)
-                    setTimes.append(setTime)
                 } 
                 return setTimes
         }
