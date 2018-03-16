@@ -28,6 +28,7 @@
 		D5B83016204E600100640682 /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B83015204E600100640682 /* SetTimeViewController.swift */; };
 		D5B83018204E659000640682 /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B83017204E659000640682 /* CalendarTableViewController.swift */; };
 		D5BB678A20490C0C0037043D /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BB678920490C0C0037043D /* TimeModel.swift */; };
+		D5BBCF1F2058BECD00E02A0C /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BBCF1E2058BECD00E02A0C /* TimeSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		D5B83015204E600100640682 /* SetTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
 		D5B83017204E659000640682 /* CalendarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
 		D5BB678920490C0C0037043D /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		D5BBCF1E2058BECD00E02A0C /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,12 +194,12 @@
 		D5B8300F204E5DE000640682 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D5B83017204E659000640682 /* CalendarTableViewController.swift */,
 				D5A3091C20454DA7006BB7AA /* DailyViewController.swift */,
 				D5B83013204E5FDB00640682 /* SwapViewController.swift */,
 				D5B83015204E600100640682 /* SetTimeViewController.swift */,
 				D549B1142048E3A5001D22BB /* RosterTableViewController.swift */,
 				D5B83011204E5F5E00640682 /* PolesViewController.swift */,
-				D5B83017204E659000640682 /* CalendarTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 				D549B10E20465C3D001D22BB /* Stage.swift */,
 				D549B11020465D16001D22BB /* SetTime.swift */,
 				D5BB678920490C0C0037043D /* TimeModel.swift */,
+				D5BBCF1E2058BECD00E02A0C /* TimeSlot.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				D5BB678A20490C0C0037043D /* TimeModel.swift in Sources */,
 				D5B83018204E659000640682 /* CalendarTableViewController.swift in Sources */,
 				D5A3091B20454DA7006BB7AA /* AppDelegate.swift in Sources */,
+				D5BBCF1F2058BECD00E02A0C /* TimeSlot.swift in Sources */,
 				D5B83014204E5FDB00640682 /* SwapViewController.swift in Sources */,
 				D5B83016204E600100640682 /* SetTimeViewController.swift in Sources */,
 				D549B10F20465C3D001D22BB /* Stage.swift in Sources */,

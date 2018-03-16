@@ -10,131 +10,84 @@ import UIKit
 import SwiftyJSON
 
 class DailyViewController: UIViewController, UITableViewDataSource {
-    private var setTimes: [SetTime] = [], dancers: [Dancer] = [], stages: [Stage] = []
+    
+    // MARK: DATA MEMBERS
+    private var timeSlots: [TimeSlot] = [], dancers: [Dancer] = []
     private var timeModel = TimeModel()
-    private var sections = [Date: [SetTime]]()
-    
+    private var sections = [Date: [TimeSlot]]()
     @IBOutlet weak var tableView: UITableView!
-    private func sortById(model: Table) {
-        switch model {
-            case .dancers:
-                dancers.sort(by: { (a, b) -> Bool in
-                    if a.id < b.id {
-                        return true
-                    } else {
-                        return false
-                    }
-                })
-            case .stages:
-                stages.sort(by: { (a, b) -> Bool in
-                    if (a.id < b.id ) {
-                        return true
-                    } else {
-                        return false
-                    }
-                })
-            default:
-                print("dont use that table here!")
-        }
-    }
-    private func fillTimeSlotsWithSetTimes() {
-        setTimes.sort(by: { (a, b) -> Bool in
-            if a.time < b.time {
-                return true
-            } else {
-                return false
-            }
-            })
-        for set in setTimes {
-            if (sections[set.time] == nil) {
-                sections[set.time] = []
-            }
-            sections[set.time]!.append(set) // group by time
-        }
-//        print(sections)
-        self.reloadData()
-    }
-        
-    
+
+ 
+    // MARK: VIEW METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Tues-06/03"
+        self.navigationItem.title = "Slots_DATE"
         tableView.dataSource = self
         
-        print("something")
+
         // Grab info from server
         let network = NetworkManager()
-        network.getItems(db: .stages) {
+
+        network.getItems(db: .TimeSlots) {
             json in
-            self.stages = network.parseJSONIntoObjects(type: .stages, json: json) as! [Stage]
-//            print("Stages: \(self.stages)")
-            self.tableView.reloadData()
-        }
-        network.getItems(db: .dancers) {
-            json in
-            self.dancers = network.parseJSONIntoObjects(type: .dancers, json: json) as! [Dancer]
-//            print("Dancers: \(self.dancers)")
-            self.tableView.reloadData()
-        }
-        network.getItems(db: .setTimes) {
-            json in
-            self.setTimes = network.parseJSONIntoObjects(type: .setTimes, json: json) as! [SetTime]
-            self.fillTimeSlotsWithSetTimes()
+            
+//            print(json)
+            
+            self.timeSlots = network.parseJSONIntoObjects(type: .TimeSlots, json: json) as! [TimeSlot]
+            // TODO: Get and Parse data for view
+//            print(self.timeSlots)
+            self.reloadData()
         }
     }
-
+ 
     
-
+    // MARK: TABLE VIEW DELEGATE METHODS
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sections.count
+        return 1
     }
 
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        var dates = sections.keys.sorted()
-        return "\(timeModel.dateToString(dates[section]))"
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        var dates = sections.keys.sorted()
+//        return "\(timeModel.dateToString(dates[section]))"
+//    }
     
     // how many rows per section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var dateTimes = sections.keys.sorted()
-        return sections[dateTimes[section]]!.count
+
+        return timeSlots.count
     }
     
     // fill each cell with data
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
-        var dates = sections.keys.sorted()
         let cell = tableView.dequeueReusableCell(withIdentifier: "rosterCell") as! TableViewCell
-        
-        let _setTime = sections[dates[indexPath.section]]![indexPath.row]
-
-        
-        
-        let dancer = dancers.first { (stripper) -> Bool in
-            if stripper.id == _setTime.dancer_id {
-                return true
-            } else {
-                return false
-            }
-        }
-        if dancer != nil {
-            cell.label.text = dancer!.fakeName
-        }
-        
-        
-        
-       
-        
-        
+        cell.label.text = "FUCK MY DAD"
         
         return cell
     }
 
+    // MARK: HELPERS
+    
     private func reloadData() {
-        self.sortById(model: .stages)
-        self.sortById(model: .dancers)
+        // do get data
         self.tableView.reloadData()
+    }
+    
+    private func sortById(model: Table) {
+        switch model {
+        case .Dancers:
+            dancers.sort(by: { (a, b) -> Bool in
+                if a.id < b.id {
+                    return true
+                } else {
+                    return false
+                }
+            })
+            
+        default:
+            print("dont use that table here!")
+        }
     }
 }
 
