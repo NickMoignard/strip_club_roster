@@ -29,6 +29,7 @@
 		D5B83018204E659000640682 /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B83017204E659000640682 /* CalendarTableViewController.swift */; };
 		D5BB678A20490C0C0037043D /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BB678920490C0C0037043D /* TimeModel.swift */; };
 		D5BBCF1F2058BECD00E02A0C /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BBCF1E2058BECD00E02A0C /* TimeSlot.swift */; };
+		D5BBCF21205BA6E500E02A0C /* ExtendString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BBCF20205BA6E500E02A0C /* ExtendString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		D5B83017204E659000640682 /* CalendarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
 		D5BB678920490C0C0037043D /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		D5BBCF1E2058BECD00E02A0C /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlot.swift; sourceTree = "<group>"; };
+		D5BBCF20205BA6E500E02A0C /* ExtendString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				D5A3092120454DA7006BB7AA /* Assets.xcassets */,
 				D5A3092320454DA7006BB7AA /* LaunchScreen.storyboard */,
 				D5A3092620454DA7006BB7AA /* Info.plist */,
+				D5BBCF20205BA6E500E02A0C /* ExtendString.swift */,
 			);
 			path = exotica;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5BBCF21205BA6E500E02A0C /* ExtendString.swift in Sources */,
 				D5B83012204E5F5E00640682 /* PolesViewController.swift in Sources */,
 				D549B10D204659B3001D22BB /* Dancer.swift in Sources */,
 				D549B117204900C2001D22BB /* TableViewCell.swift in Sources */,

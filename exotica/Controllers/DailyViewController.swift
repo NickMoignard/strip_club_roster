@@ -62,12 +62,54 @@ class DailyViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
         let cell = tableView.dequeueReusableCell(withIdentifier: "rosterCell") as! TableViewCell
-        cell.label.text = "FUCK MY DAD"
         
+        var cellText = ""
+        
+        cellText += timeModel.dateToString(timeSlots[indexPath.row].time)
+        
+        
+//        for pole in timeSlots[indexPath.row].poles {
+//            var i = 0
+//
+//            if (pole.value["name"].string != nil ) {
+//                cellText += "\(stageName(key: pole.key)): " + "\(pole.value["name"].string!), ".firstUppercased
+//            }
+//            i += 1
+//        }
+        
+        
+        
+        
+        cell.label.text = cellText
+        cell.label.textAlignment = .center
         return cell
     }
 
     // MARK: HELPERS
+    
+    private func stageName(key: String) -> String {
+        var stageName = ""
+        
+        switch key {
+        case "upstairs_main":
+            stageName = "Upstairs Main"
+        case "upstairs_secondary":
+            stageName = "Upstairs Second"
+        case "downstairs_one":
+            stageName = "Downstairs Main"
+        case "downstairs_two":
+            stageName = "Downstairs Main"
+        case "downstairs_booth":
+            stageName = "Downstairs Booth"
+        case "downstairs_bar":
+            stageName = "Downstairs Bar"
+        default:
+            stageName = "Something went horribly wrong"
+            print("well fuck my dad")
+        }
+        
+        return stageName
+    }
     
     private func reloadData() {
         // do get data
