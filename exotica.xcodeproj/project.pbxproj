@@ -10,10 +10,11 @@
 		23413A0B17AFBAF54D089CE5 /* Pods_exoticaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2184C56A55D87B23F9E69559 /* Pods_exoticaUITests.framework */; };
 		8522ADEAF555B5898D3FFF2A /* Pods_exotica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A08DCB0223BDC4AD9D8857 /* Pods_exotica.framework */; };
 		CD8D6AC3377C3566FE7E6D8F /* Pods_exoticaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DEE478F5B723FEA994DEC9 /* Pods_exoticaTests.framework */; };
+		D5089C8520635FEB00D2DC3E /* TimeSlotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5089C8420635FEB00D2DC3E /* TimeSlotTableViewCell.swift */; };
+		D5089C872064B70800D2DC3E /* TimeSlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5089C862064B70800D2DC3E /* TimeSlotViewController.swift */; };
 		D549B10D204659B3001D22BB /* Dancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B10C204659B3001D22BB /* Dancer.swift */; };
 		D549B10F20465C3D001D22BB /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B10E20465C3D001D22BB /* Stage.swift */; };
 		D549B11120465D16001D22BB /* SetTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B11020465D16001D22BB /* SetTime.swift */; };
-		D549B1152048E3A5001D22BB /* RosterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B1142048E3A5001D22BB /* RosterTableViewController.swift */; };
 		D549B117204900C2001D22BB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549B116204900C2001D22BB /* TableViewCell.swift */; };
 		D5A3091B20454DA7006BB7AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3091A20454DA7006BB7AA /* AppDelegate.swift */; };
 		D5A3091D20454DA7006BB7AA /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3091C20454DA7006BB7AA /* DailyViewController.swift */; };
@@ -23,9 +24,6 @@
 		D5A3093020454DA7006BB7AA /* exoticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3092F20454DA7006BB7AA /* exoticaTests.swift */; };
 		D5A3093B20454DA7006BB7AA /* exoticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3093A20454DA7006BB7AA /* exoticaUITests.swift */; };
 		D5A3094920454E14006BB7AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A3094820454E14006BB7AA /* NetworkManager.swift */; };
-		D5B83012204E5F5E00640682 /* PolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B83011204E5F5E00640682 /* PolesViewController.swift */; };
-		D5B83014204E5FDB00640682 /* SwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B83013204E5FDB00640682 /* SwapViewController.swift */; };
-		D5B83016204E600100640682 /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B83015204E600100640682 /* SetTimeViewController.swift */; };
 		D5B83018204E659000640682 /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B83017204E659000640682 /* CalendarTableViewController.swift */; };
 		D5BB678A20490C0C0037043D /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BB678920490C0C0037043D /* TimeModel.swift */; };
 		D5BBCF1F2058BECD00E02A0C /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BBCF1E2058BECD00E02A0C /* TimeSlot.swift */; };
@@ -59,10 +57,11 @@
 		4E68EBFA4D2E73E6ED519F01 /* Pods-exotica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exotica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exotica/Pods-exotica.debug.xcconfig"; sourceTree = "<group>"; };
 		9A071FF42B57BE0644AF3466 /* Pods-exoticaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exoticaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exoticaTests/Pods-exoticaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D47502370ED86C9BFE9271CF /* Pods-exotica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exotica.release.xcconfig"; path = "Pods/Target Support Files/Pods-exotica/Pods-exotica.release.xcconfig"; sourceTree = "<group>"; };
+		D5089C8420635FEB00D2DC3E /* TimeSlotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotTableViewCell.swift; sourceTree = "<group>"; };
+		D5089C862064B70800D2DC3E /* TimeSlotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotViewController.swift; sourceTree = "<group>"; };
 		D549B10C204659B3001D22BB /* Dancer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dancer.swift; sourceTree = "<group>"; };
 		D549B10E20465C3D001D22BB /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		D549B11020465D16001D22BB /* SetTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTime.swift; sourceTree = "<group>"; };
-		D549B1142048E3A5001D22BB /* RosterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterTableViewController.swift; sourceTree = "<group>"; };
 		D549B116204900C2001D22BB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D5A3091720454DA7006BB7AA /* exotica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exotica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A3091A20454DA7006BB7AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +77,6 @@
 		D5A3093A20454DA7006BB7AA /* exoticaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exoticaUITests.swift; sourceTree = "<group>"; };
 		D5A3093C20454DA7006BB7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5A3094820454E14006BB7AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		D5B83011204E5F5E00640682 /* PolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolesViewController.swift; sourceTree = "<group>"; };
-		D5B83013204E5FDB00640682 /* SwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewController.swift; sourceTree = "<group>"; };
-		D5B83015204E600100640682 /* SetTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
 		D5B83017204E659000640682 /* CalendarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
 		D5BB678920490C0C0037043D /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		D5BBCF1E2058BECD00E02A0C /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlot.swift; sourceTree = "<group>"; };
@@ -167,6 +163,7 @@
 				D5B8300F204E5DE000640682 /* Controllers */,
 				D5A3091A20454DA7006BB7AA /* AppDelegate.swift */,
 				D5A3091E20454DA7006BB7AA /* Main.storyboard */,
+				D5089C8420635FEB00D2DC3E /* TimeSlotTableViewCell.swift */,
 				D549B116204900C2001D22BB /* TableViewCell.swift */,
 				D5A3092120454DA7006BB7AA /* Assets.xcassets */,
 				D5A3092320454DA7006BB7AA /* LaunchScreen.storyboard */,
@@ -199,10 +196,7 @@
 			children = (
 				D5B83017204E659000640682 /* CalendarTableViewController.swift */,
 				D5A3091C20454DA7006BB7AA /* DailyViewController.swift */,
-				D5B83013204E5FDB00640682 /* SwapViewController.swift */,
-				D5B83015204E600100640682 /* SetTimeViewController.swift */,
-				D549B1142048E3A5001D22BB /* RosterTableViewController.swift */,
-				D5B83011204E5F5E00640682 /* PolesViewController.swift */,
+				D5089C862064B70800D2DC3E /* TimeSlotViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -516,20 +510,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5BBCF21205BA6E500E02A0C /* ExtendString.swift in Sources */,
-				D5B83012204E5F5E00640682 /* PolesViewController.swift in Sources */,
 				D549B10D204659B3001D22BB /* Dancer.swift in Sources */,
 				D549B117204900C2001D22BB /* TableViewCell.swift in Sources */,
 				D5A3094920454E14006BB7AA /* NetworkManager.swift in Sources */,
+				D5089C872064B70800D2DC3E /* TimeSlotViewController.swift in Sources */,
 				D5A3091D20454DA7006BB7AA /* DailyViewController.swift in Sources */,
 				D5BB678A20490C0C0037043D /* TimeModel.swift in Sources */,
 				D5B83018204E659000640682 /* CalendarTableViewController.swift in Sources */,
 				D5A3091B20454DA7006BB7AA /* AppDelegate.swift in Sources */,
 				D5BBCF1F2058BECD00E02A0C /* TimeSlot.swift in Sources */,
-				D5B83014204E5FDB00640682 /* SwapViewController.swift in Sources */,
-				D5B83016204E600100640682 /* SetTimeViewController.swift in Sources */,
+				D5089C8520635FEB00D2DC3E /* TimeSlotTableViewCell.swift in Sources */,
 				D549B10F20465C3D001D22BB /* Stage.swift in Sources */,
 				D549B11120465D16001D22BB /* SetTime.swift in Sources */,
-				D549B1152048E3A5001D22BB /* RosterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

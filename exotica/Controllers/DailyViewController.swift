@@ -58,31 +58,52 @@ class DailyViewController: UIViewController, UITableViewDataSource {
     }
     
     // fill each cell with data
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      
-        let cell = tableView.dequeueReusableCell(withIdentifier: "rosterCell") as! TableViewCell
-        
-        var cellText = ""
-        
-        cellText += timeModel.dateToString(timeSlots[indexPath.row].time)
-        
-        
-//        for pole in timeSlots[indexPath.row].poles {
-//            var i = 0
 //
-//            if (pole.value["name"].string != nil ) {
-//                cellText += "\(stageName(key: pole.key)): " + "\(pole.value["name"].string!), ".firstUppercased
-//            }
-//            i += 1
-//        }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TimeSlotTableViewCell
+        cell.timeSlot = timeSlots[indexPath.row]
+        var cellText = ""
+
+        cellText += timeModel.dateToString(timeSlots[indexPath.row].time)
+
+        var poles = timeSlots[indexPath.row].poles
+        
+        print(poles)
+        if let upstairsMain = poles["upstairs_main"] {
+            cell.upstairsMain.text = upstairsMain["name"].string
+        }
+        if let upstairsSecondary = poles["upstairs_secondary"] {
+            cell.upstairsSecondary.text = upstairsSecondary["name"].string
+        }
+        if let downstairsOne = poles["downstairs_one"] {
+            cell.downstairsOne.text = downstairsOne["name"].string
+        }
+        if let downstairsTwo = poles["downstairs_two"] {
+            cell.downstairsTwo.text = downstairsTwo["name"].string
+        }
+        if let downstairsBooth = poles["downstairs_booth"] {
+            cell.downstairsBooth.text = downstairsBooth["name"].string
+        }
+        if let downstairsBar = poles["downstairs_bar"] {
+            cell.downstairsBar.text = downstairsBar["name"].string
+        }
+        cell.timeLabel.text = cellText
         
         
-        
-        
-        cell.label.text = cellText
-        cell.label.textAlignment = .center
         return cell
+    }
+    
+    // MARK: SEGUES
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is TimeSlotViewController
+        {
+            let vc = segue.destination as? TimeSlotViewController
+            var senderCell = sender as! TimeSlotTableViewCell
+            vc?.timeSlot = senderCell.timeSlot
+            
+        }
     }
 
     // MARK: HELPERS

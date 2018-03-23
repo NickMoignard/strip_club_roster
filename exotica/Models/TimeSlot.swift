@@ -21,6 +21,15 @@ struct TimeSlot {
     ]
     var time: Date, id: Int
     
+    
+    
+    
+    init() {
+        self.time = Date()
+        self.id = Int()
+    }
+    
+    
     init(time: Date, id: Int, poles: [Any]) {
 
         

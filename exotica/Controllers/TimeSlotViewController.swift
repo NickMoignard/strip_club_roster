@@ -1,0 +1,150 @@
+//
+//  TimeSlotViewController.swift
+//  exotica
+//
+//  Created by Nick Moignard on 23/3/18.
+//  Copyright © 2018 Nick Moignard. All rights reserved.
+//
+
+import UIKit
+
+class TimeSlotViewController: UIViewController, UITextFieldDelegate {
+    var timeSlot: TimeSlot = TimeSlot()
+    var upstairsMainText = "", upstairsSecondaryText = "", downstairsOneText = "", downstairsTwoText = "", downstairsBoothText = "", downstairsBarText = ""
+    let networkManager = NetworkManager()
+    
+    
+    @IBOutlet var upstairsMainTextField: UITextField!
+    @IBOutlet var upstairsSecondaryTextField: UITextField!
+    @IBOutlet var downstairsOneTextField: UITextField!
+    @IBOutlet var downstairsTwoTextField: UITextField!
+    @IBOutlet var downstairsBoothTextField: UITextField!
+    @IBOutlet var downstairsBarTextField: UITextField!
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        setText()
+        
+        
+        
+        
+        
+        upstairsMainTextField.text = upstairsMainText
+        upstairsSecondaryTextField.text = upstairsSecondaryText
+        downstairsOneTextField.text = downstairsOneText
+        downstairsTwoTextField.text = downstairsTwoText
+        downstairsBoothTextField.text = downstairsBoothText
+        downstairsBarTextField.text = downstairsBarText
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func textField(_ textFieldToChange: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        // limit to 4 characters
+        let characterCountLimit = 20
+        
+        // We need to figure out how many characters would be in the string after the change happens
+        let startingLength = textFieldToChange.text?.characters.count ?? 0
+        let lengthToAdd = string.characters.count
+        let lengthToReplace = range.length
+        
+        let newLength = startingLength + lengthToAdd - lengthToReplace
+        
+        
+        
+        if textFieldToChange == upstairsMainTextField {
+             //upstairsMainText = string
+        } else if textFieldToChange == upstairsSecondaryTextField {
+            //upstairsSecondaryText = string
+        } else if textFieldToChange == downstairsOneTextField {
+            //downstairsOneText = string
+        } else if textFieldToChange == downstairsTwoTextField {
+            //downstairsTwoText = string
+        } else if textFieldToChange == downstairsBoothTextField {
+            //downstairsBoothText = string
+        } else if textFieldToChange == downstairsBarTextField {
+            //downstairsBarText = string
+        }
+        return true
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        saveText()
+    }
+    
+    // MARK: Helpers
+    private func saveText() {
+        if let uMText = upstairsMainTextField.text {
+            upstairsMainText = uMText
+        }
+        if let uSText = upstairsSecondaryTextField.text {
+            upstairsSecondaryText = uSText
+        }
+        if let dOText = downstairsOneTextField.text {
+            downstairsOneText = dOText
+        }
+        if let dTText = downstairsTwoTextField.text {
+            downstairsTwoText = dTText
+        }
+        if let dBoothText = downstairsBoothTextField.text {
+            downstairsBoothText = dBoothText
+        }
+        if let dBarText = downstairsBarTextField.text {
+            downstairsBarText = dBarText
+        }
+    }
+    
+    private func setText() {
+        var poles = self.timeSlot.poles
+        
+        
+        if let upstairsMain = poles["upstairs_main"] {
+            upstairsMainText = upstairsMain["name"].string!
+        }
+        if let upstairsSecondary = poles["upstairs_secondary"] {
+            upstairsSecondaryText = upstairsSecondary["name"].string!
+        }
+        if let downstairsOne = poles["downstairs_one"] {
+            downstairsOneText = downstairsOne["name"].string!
+        }
+        if let downstairsTwo = poles["downstairs_two"] {
+            downstairsTwoText = downstairsTwo["name"].string!
+        }
+        if let downstairsBooth = poles["downstairs_booth"] {
+            downstairsBoothText = downstairsBooth["name"].string!
+        }
+        if let downstairsBar = poles["downstairs_bar"] {
+            downstairsBarText = downstairsBar["name"].string!
+        }
+        
+    }
+    
+    
+    @IBAction func updateTimeSlot(_ sender: Any) {
+        print(upstairsMainText)
+        print(upstairsSecondaryText)
+        print(downstairsOneText)
+        print(downstairsTwoText)
+        print(downstairsBoothText)
+        print(downstairsBarText)
+    }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
