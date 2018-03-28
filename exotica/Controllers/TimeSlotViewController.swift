@@ -64,26 +64,29 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
         
         
         if textFieldToChange == upstairsMainTextField {
-             //upstairsMainText = string
+             upstairsMainText += string
         } else if textFieldToChange == upstairsSecondaryTextField {
-            //upstairsSecondaryText = string
+            upstairsSecondaryText += string
         } else if textFieldToChange == downstairsOneTextField {
-            //downstairsOneText = string
+            downstairsOneText += string
         } else if textFieldToChange == downstairsTwoTextField {
-            //downstairsTwoText = string
+            downstairsTwoText += string
         } else if textFieldToChange == downstairsBoothTextField {
-            //downstairsBoothText = string
+            downstairsBoothText += string
         } else if textFieldToChange == downstairsBarTextField {
-            //downstairsBarText = string
+            downstairsBarText += string
         }
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        saveText()
+//        saveText()
+//        setText()
     }
     
     // MARK: Helpers
     private func saveText() {
+        
+        print("sry saving dad rn")
         if let uMText = upstairsMainTextField.text {
             upstairsMainText = uMText
         }
@@ -107,6 +110,7 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func setText() {
+        print("sry setting dad now")
         var poles = self.timeSlot.poles
         
         
@@ -149,14 +153,10 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
         
         networkManager.editItem(db: .TimeSlots, id: self.timeSlot.id, params: params) {
             json in
-            print(json)
+            print("edit item completion handler!")
+            print("something")
         }
-        print(upstairsMainText)
-        print(upstairsSecondaryText)
-        print(downstairsOneText)
-        print(downstairsTwoText)
-        print(downstairsBoothText)
-        print(downstairsBarText)
+
     }
     /*
     // MARK: - Navigation

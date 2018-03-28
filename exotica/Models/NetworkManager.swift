@@ -139,6 +139,7 @@ class NetworkManager {
     // TODO: editItem
         func editItem(db: Table, id: Int, params: Parameters, completion: @escaping (JSON) -> Void) {
             let url = createItemUrl(db: db, id: id)
+            print(params)
             Alamofire.request(url, method: .patch, parameters: params).response {
                 response in
                 // Error handling

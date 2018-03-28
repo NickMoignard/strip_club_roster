@@ -71,22 +71,22 @@ class DailyViewController: UIViewController, UITableViewDataSource {
         
 
         if let upstairsMain = poles["upstairs_main"] {
-            cell.upstairsMain.text = upstairsMain.string!.firstUppercased
+            cell.upstairsMain.text = upstairsMain.string != nil ? upstairsMain.string!.firstUppercased : ""
         }
         if let upstairsSecondary = poles["upstairs_secondary"] {
-            cell.upstairsSecondary.text = upstairsSecondary.string!.firstUppercased
+            cell.upstairsSecondary.text = upstairsSecondary.string != nil ? upstairsSecondary.string!.firstUppercased : ""
         }
         if let downstairsOne = poles["downstairs_one"] {
-            cell.downstairsOne.text = downstairsOne.string!.firstUppercased
+            cell.downstairsOne.text = downstairsOne.string != nil ? downstairsOne.string!.firstUppercased : ""
         }
         if let downstairsTwo = poles["downstairs_two"] {
-            cell.downstairsTwo.text = downstairsTwo.string!.firstUppercased
+            cell.downstairsTwo.text = downstairsTwo.string != nil ? downstairsTwo.string!.firstUppercased : ""
         }
         if let downstairsBooth = poles["downstairs_booth"] {
-            cell.downstairsBooth.text = downstairsBooth.string!.firstUppercased
+            cell.downstairsBooth.text = downstairsBooth.string != nil ? downstairsBooth.string!.firstUppercased : ""
         }
         if let downstairsBar = poles["downstairs_bar"] {
-            cell.downstairsBar.text = downstairsBar.string!.firstUppercased
+            cell.downstairsBar.text = downstairsBar.string != nil ? downstairsBar.string!.firstUppercased : ""
         }
         cell.timeLabel.text = cellText
         
