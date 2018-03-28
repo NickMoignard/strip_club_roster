@@ -27,7 +27,7 @@ class NetworkManager {
 
                 do {
                     let json = try JSON(data: data)
-//                    print(json)
+                    print(json)
                     completion(json)
                 } catch {
                     print("error creating JSON object")
@@ -49,8 +49,8 @@ class NetworkManager {
         return baseUrl
     }
     private func createItemUrl(db: Table, id: Int) -> String {
-        var url = createURL(db: db)
-        url += "/\(id)"
+        var url = createURL(db: db, json: false)
+        url += "/\(id).json"
         return url
     }
     
@@ -108,48 +108,71 @@ class NetworkManager {
                     
                     
                     if let _timeDate = timeModel.stringToDateForSetTimeStruct(time: timeString) {
+//                        print(_timeDate)
                         let timeSlot = TimeSlot(time: _timeDate, id: id, poles: poles)
                         timeSlots.append(timeSlot)
 
                     }
                 }
+                print(timeSlots)
                 return timeSlots
         }
     }
     // TODO: addItem
-    //    func addItem(db: Table, params: Parameters, completion: @escaping (JSON) -> Void) {
-    //        let url = createURL(db: db)
-    //        Alamofire.request(url, method: .put, parameters: params).response {
-    //            response in
-    //            // Error handling
-    //            if let json = self.returnJSON(response: response) {
-    //                completion(json)
-    //            }
-    //        }
-    //    }
+        func addItem(db: Table, params: Parameters, completion: @escaping (JSON) -> Void) {
+            let url = createURL(db: db)
+            Alamofire.request(url, method: .put, parameters: params).response {
+                response in
+                // Error handling
+                if let data = response.data {
+                    
+                    do {
+                        let json = try JSON(data: data)
+                        print(json)
+                        completion(json)
+                    } catch {
+                        print("error creating JSON object")
+                    }
+                }
+            }
+        }
     // TODO: editItem
-    //    func editItem(db: Table, id: Int, params: Parameters, completion: @escaping (JSON) -> Void) {
-    //        let url = createItemUrl(db: db, id: id)
-    //        Alamofire.request(url, method: .patch, parameters: params).response {
-    //            response in
-    //            // Error handling
-    //            if let json = self.returnJSON(response: response) {
-    //                completion(json)
-    //            }
-    //        }
-    //    }
+        func editItem(db: Table, id: Int, params: Parameters, completion: @escaping (JSON) -> Void) {
+            let url = createItemUrl(db: db, id: id)
+            Alamofire.request(url, method: .patch, parameters: params).response {
+                response in
+                // Error handling
+                if let data = response.data {
+                    print(data)
+                    do {
+                        let json = try JSON(data: data)
+                        print(json)
+                        completion(json)
+                    } catch {
+                        print("error creating JSON object")
+                    }
+                }
+            }
+        }
     // TODO: deleteItem
-    //    func deleteItem(db: Table, id: Int, completion: @escaping (JSON) -> Void) {
-    //        let url = createItemUrl(db: db, id: id)
-    //        Alamofire.request(url, method: .delete, parameters: contentType).response {
-    //            response in
-    //            // ERROR HANDLING GOES HERE
-    //            if let json = self.returnJSON(response: response) {
-    //                completion(json)
-    //            }
-    //        }
-    //    }
-    //
+        func deleteItem(db: Table, id: Int, completion: @escaping (JSON) -> Void) {
+            let url = createItemUrl(db: db, id: id)
+            Alamofire.request(url, method: .delete, parameters: contentType).response {
+                response in
+                // ERROR HANDLING GOES HERE
+                if let data = response.data {
+                    
+                    do {
+                        let json = try JSON(data: data)
+                        print(json)
+                        completion(json)
+                    } catch {
+                        print("error creating JSON object")
+                    }
+                }
+            }
+        }
+    
     
     //    private func returnJSON(response: DataResponse<Any>) -> JSON? {
     //        if let data = response.data {

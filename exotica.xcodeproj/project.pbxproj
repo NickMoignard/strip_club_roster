@@ -227,6 +227,7 @@
 				D5A3091520454DA7006BB7AA /* Resources */,
 				F1C615C00275133605FA0DB3 /* [CP] Embed Pods Frameworks */,
 				995E8AEEE189CCB851BA8968 /* [CP] Copy Pods Resources */,
+				D5089C88206B633800D2DC3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -481,6 +482,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-exoticaUITests/Pods-exoticaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D5089C88206B633800D2DC3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 21879045719d8605b214835a6ec879d404b9fd42 3ae76a0a5948badbc365ffab63183f5dc72b16901408a0e7a9449d819a4175fb";
 		};
 		F1C615C00275133605FA0DB3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

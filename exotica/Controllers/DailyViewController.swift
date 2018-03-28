@@ -35,7 +35,7 @@ class DailyViewController: UIViewController, UITableViewDataSource {
             
             self.timeSlots = network.parseJSONIntoObjects(type: .TimeSlots, json: json) as! [TimeSlot]
             // TODO: Get and Parse data for view
-//            print(self.timeSlots)
+            print(self.timeSlots)
             self.reloadData()
         }
     }
@@ -69,24 +69,24 @@ class DailyViewController: UIViewController, UITableViewDataSource {
 
         var poles = timeSlots[indexPath.row].poles
         
-        print(poles)
+
         if let upstairsMain = poles["upstairs_main"] {
-            cell.upstairsMain.text = upstairsMain["name"].string
+            cell.upstairsMain.text = upstairsMain.string!.firstUppercased
         }
         if let upstairsSecondary = poles["upstairs_secondary"] {
-            cell.upstairsSecondary.text = upstairsSecondary["name"].string
+            cell.upstairsSecondary.text = upstairsSecondary.string!.firstUppercased
         }
         if let downstairsOne = poles["downstairs_one"] {
-            cell.downstairsOne.text = downstairsOne["name"].string
+            cell.downstairsOne.text = downstairsOne.string!.firstUppercased
         }
         if let downstairsTwo = poles["downstairs_two"] {
-            cell.downstairsTwo.text = downstairsTwo["name"].string
+            cell.downstairsTwo.text = downstairsTwo.string!.firstUppercased
         }
         if let downstairsBooth = poles["downstairs_booth"] {
-            cell.downstairsBooth.text = downstairsBooth["name"].string
+            cell.downstairsBooth.text = downstairsBooth.string!.firstUppercased
         }
         if let downstairsBar = poles["downstairs_bar"] {
-            cell.downstairsBar.text = downstairsBar["name"].string
+            cell.downstairsBar.text = downstairsBar.string!.firstUppercased
         }
         cell.timeLabel.text = cellText
         

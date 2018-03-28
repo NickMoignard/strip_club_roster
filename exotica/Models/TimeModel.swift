@@ -20,13 +20,13 @@ class TimeModel {
     
     public func stringToDateForSetTimeStruct(time: String) -> Date? {
         var _time = time
-        _time.removeLast(5)
+        _time.removeLast(10)
 //        if (_time != "") {
 //            _time.removeLast(5)
 //            print(_time)
 //            return dateFormatter.date(from: _time)!
 //        }
-        
+        print(_time)
         return dateFormatter.date(from: _time)
     }
     

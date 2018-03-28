@@ -11,6 +11,7 @@ import SwiftyJSON
 
 struct TimeSlot {
     // TODO: write code that initializes the poles dict
+    let _poleNameStringArray = ["upstairs_main", "upstairs_secondary", "downstairs_one", "downstairs_two", "downstairs_booth", "downstairs_bar"]
     var poles = [
         "upstairs_main": JSON(),
         "upstairs_secondary": JSON(),
@@ -36,12 +37,14 @@ struct TimeSlot {
         self.time = time
         self.id = id
         
-        self.poles["upstairs_main"] = JSON(poles[0])
-        self.poles["upstairs_secondary"] = JSON(poles[1])
-        self.poles["downstairs_one"] = JSON(poles[2])
-        self.poles["downstairs_two"] = JSON(poles[3])
-        self.poles["downstairs_booth"] = JSON(poles[4])
-        self.poles["downstairs_bar"] = JSON(poles[5])
-        
+        var i = 0
+        for pole in poles {
+            
+            var poleJSON = pole as! JSON
+            self.poles[_poleNameStringArray[i]] = poleJSON["name"] != nil ? poleJSON["name"] : JSON()
+            
+            
+            i += 1
+        }
     }
 }

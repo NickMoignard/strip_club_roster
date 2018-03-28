@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     var timeSlot: TimeSlot = TimeSlot()
@@ -77,7 +79,6 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        
         saveText()
     }
     
@@ -101,6 +102,8 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
         if let dBarText = downstairsBarTextField.text {
             downstairsBarText = dBarText
         }
+        
+//        networkManager.updateTimeSlot()
     }
     
     private func setText() {
@@ -108,28 +111,46 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
         
         
         if let upstairsMain = poles["upstairs_main"] {
-            upstairsMainText = upstairsMain["name"].string!
+            upstairsMainText =  upstairsMain["name"].string != nil ? upstairsMain["name"].string! : ""
         }
         if let upstairsSecondary = poles["upstairs_secondary"] {
-            upstairsSecondaryText = upstairsSecondary["name"].string!
+            upstairsSecondaryText = upstairsSecondary["name"].string != nil ? upstairsSecondary["name"].string! : ""
         }
         if let downstairsOne = poles["downstairs_one"] {
-            downstairsOneText = downstairsOne["name"].string!
+            downstairsOneText = downstairsOne["name"].string != nil ? downstairsOne["name"].string! : ""
         }
         if let downstairsTwo = poles["downstairs_two"] {
-            downstairsTwoText = downstairsTwo["name"].string!
+            downstairsTwoText = downstairsTwo["name"].string != nil ? downstairsTwo["name"].string! : ""
         }
         if let downstairsBooth = poles["downstairs_booth"] {
-            downstairsBoothText = downstairsBooth["name"].string!
+            downstairsBoothText = downstairsBooth["name"].string != nil ? downstairsBooth["name"].string! : ""
         }
         if let downstairsBar = poles["downstairs_bar"] {
-            downstairsBarText = downstairsBar["name"].string!
+            downstairsBarText = downstairsBar["name"].string != nil ? downstairsBar["name"].string! : ""
         }
         
     }
     
     
+    
+    
     @IBAction func updateTimeSlot(_ sender: Any) {
+        
+        var params = timeSlot.poles as Parameters
+        
+        params["upstairs_main"] = upstairsMainText
+        params["upstairs_secondary"] = upstairsSecondaryText
+        params["downstairs_one"] = downstairsOneText
+        params["downstairs_two"] = downstairsTwoText
+        params["downstairs_booth"] = downstairsBoothText
+        params["downstairs_bar"] = downstairsBarText
+        
+        
+        
+        networkManager.editItem(db: .TimeSlots, id: self.timeSlot.id, params: params) {
+            json in
+            print(json)
+        }
         print(upstairsMainText)
         print(upstairsSecondaryText)
         print(downstairsOneText)
