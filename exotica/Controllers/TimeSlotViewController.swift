@@ -154,7 +154,7 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
         networkManager.editItem(db: .TimeSlots, id: self.timeSlot.id, params: params) {
             json in
             print("edit item completion handler!")
-            print("something")
+        
         }
 
     }
