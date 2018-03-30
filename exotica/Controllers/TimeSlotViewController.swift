@@ -24,6 +24,14 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var downstairsBoothTextField: UITextField!
     @IBOutlet var downstairsBarTextField: UITextField!
     
+    var timeSlotTitleVar = ""
+    var upstairsMainTextFieldVar: String = ""
+    var upstairsSecondaryTextFieldVar: String = ""
+    var downstairsOneTextFieldVar: String = ""
+    var downstairsTwoTextFieldVar: String = ""
+    var downstairsBoothTextFieldVar: String = ""
+    var downstairsBarTextFieldVar: String = ""
+    
     
     
     override func viewDidLoad() {
@@ -35,13 +43,13 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
         
         
         
-        
-        upstairsMainTextField.text = upstairsMainText
-        upstairsSecondaryTextField.text = upstairsSecondaryText
-        downstairsOneTextField.text = downstairsOneText
-        downstairsTwoTextField.text = downstairsTwoText
-        downstairsBoothTextField.text = downstairsBoothText
-        downstairsBarTextField.text = downstairsBarText
+        timeSlotTitle.text = timeSlotTitleVar
+        upstairsMainTextField.text = upstairsMainTextFieldVar
+        upstairsSecondaryTextField.text = upstairsSecondaryTextFieldVar
+        downstairsOneTextField.text = downstairsOneTextFieldVar
+        downstairsTwoTextField.text = downstairsTwoTextFieldVar
+        downstairsBoothTextField.text = downstairsBoothTextFieldVar
+        downstairsBarTextField.text = downstairsBarTextFieldVar
         // Do any additional setup after loading the view.
     }
 

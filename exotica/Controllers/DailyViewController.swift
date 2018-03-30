@@ -102,13 +102,17 @@ class DailyViewController: UIViewController, UITableViewDataSource {
             let vc = segue.destination as? TimeSlotViewController
             var senderCell = sender as! TimeSlotTableViewCell
             vc?.timeSlot = senderCell.timeSlot
-            vc?.timeSlotTitle.text = senderCell.timeLabel.text
-            vc?.upstairsMainTextField.text = senderCell.upstairsMain.text
-            vc?.upstairsSecondaryTextField.text = senderCell.upstairsSecondary.text
-            vc?.downstairsOneTextField.text = senderCell.downstairsOne.text
-            vc?.downstairsTwoTextField.text = senderCell.downstairsTwo.text
-            vc?.downstairsBoothTextField.text = senderCell.downstairsBooth.text
-            vc?.downstairsBarTextField.text = senderCell.downstairsBar.text
+            vc?.timeSlotTitleVar = senderCell.timeLabel.text != nil ? senderCell.timeLabel.text! : ""
+            
+            
+        
+            
+            vc?.upstairsMainTextFieldVar = senderCell.upstairsMain.text != nil ? senderCell.upstairsMain.text! : ""
+            vc?.upstairsSecondaryTextFieldVar = senderCell.upstairsSecondary.text != nil ? senderCell.upstairsSecondary.text! : ""
+            vc?.downstairsOneTextFieldVar = senderCell.downstairsOne.text != nil ? senderCell.downstairsOne.text! : ""
+            vc?.downstairsTwoTextFieldVar =  senderCell.downstairsTwo.text != nil ? senderCell.downstairsTwo.text! : ""
+            vc?.downstairsBoothTextFieldVar = senderCell.downstairsBooth.text != nil ? senderCell.downstairsBooth.text! : ""
+            vc?.downstairsBarTextFieldVar = senderCell.downstairsBar.text != nil ? senderCell.downstairsBar.text! : ""
             
         }
     }
