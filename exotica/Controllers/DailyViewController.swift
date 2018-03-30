@@ -102,6 +102,13 @@ class DailyViewController: UIViewController, UITableViewDataSource {
             let vc = segue.destination as? TimeSlotViewController
             var senderCell = sender as! TimeSlotTableViewCell
             vc?.timeSlot = senderCell.timeSlot
+            vc?.timeSlotTitle.text = senderCell.timeLabel.text
+            vc?.upstairsMainTextField.text = senderCell.upstairsMain.text
+            vc?.upstairsSecondaryTextField.text = senderCell.upstairsSecondary.text
+            vc?.downstairsOneTextField.text = senderCell.downstairsOne.text
+            vc?.downstairsTwoTextField.text = senderCell.downstairsTwo.text
+            vc?.downstairsBoothTextField.text = senderCell.downstairsBooth.text
+            vc?.downstairsBarTextField.text = senderCell.downstairsBar.text
             
         }
     }

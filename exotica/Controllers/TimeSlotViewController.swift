@@ -16,6 +16,7 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     let networkManager = NetworkManager()
     
     
+    @IBOutlet var timeSlotTitle: UILabel!
     @IBOutlet var upstairsMainTextField: UITextField!
     @IBOutlet var upstairsSecondaryTextField: UITextField!
     @IBOutlet var downstairsOneTextField: UITextField!
@@ -27,7 +28,7 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(red: 111.0, green: 113.0, blue: 122.0, alpha: 1.0)
         
         setText()
         
