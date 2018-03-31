@@ -36,13 +36,7 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red: 111.0, green: 113.0, blue: 122.0, alpha: 1.0)
-        
         setText()
-        
-        
-        
-        
         timeSlotTitle.text = timeSlotTitleVar
         upstairsMainTextField.text = upstairsMainTextFieldVar
         upstairsSecondaryTextField.text = upstairsSecondaryTextFieldVar
@@ -59,16 +53,6 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textFieldToChange: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        // limit to 4 characters
-        let characterCountLimit = 20
-        
-        // We need to figure out how many characters would be in the string after the change happens
-        let startingLength = textFieldToChange.text?.characters.count ?? 0
-        let lengthToAdd = string.characters.count
-        let lengthToReplace = range.length
-        
-        let newLength = startingLength + lengthToAdd - lengthToReplace
         
         
         
@@ -94,8 +78,6 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Helpers
     private func saveText() {
-        
-        print("sry saving dad rn")
         if let uMText = upstairsMainTextField.text {
             upstairsMainText = uMText
         }
@@ -146,10 +128,10 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    
     @IBAction func updateTimeSlot(_ sender: Any) {
         
         var params = timeSlot.poles as Parameters
+        saveText()
         
         params["upstairs_main"] = upstairsMainText
         params["upstairs_secondary"] = upstairsSecondaryText
@@ -157,8 +139,6 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
         params["downstairs_two"] = downstairsTwoText
         params["downstairs_booth"] = downstairsBoothText
         params["downstairs_bar"] = downstairsBarText
-        
-        
         
         networkManager.editItem(db: .TimeSlots, id: self.timeSlot.id, params: params) {
             json in

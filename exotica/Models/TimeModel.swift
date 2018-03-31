@@ -15,7 +15,7 @@ class TimeModel {
     
     init() {
         dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
     }
     
     public func stringToDateForSetTimeStruct(time: String) -> Date? {
@@ -34,9 +34,7 @@ class TimeModel {
     public func dateToDescription (date: Date) -> String {
         var _dateFormatter = DateFormatter()
         _dateFormatter.dateFormat = "EEEE - dd MMM"
-        
         return _dateFormatter.string(from: date)
-        
     }
     
     

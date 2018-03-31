@@ -17,27 +17,29 @@ class DailyViewController: UIViewController, UITableViewDataSource {
     private var sections = [Date: [TimeSlot]]()
     @IBOutlet weak var tableView: UITableView!
 
- 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.getData()
+    }
+    
+    private func getData() {
+        // Grab info from server
+        let network = NetworkManager()
+        
+        network.getItems(db: .TimeSlots) {
+            json in
+            self.timeSlots = network.parseJSONIntoObjects(type: .TimeSlots, json: json) as! [TimeSlot]
+            // TODO: Get and Parse data for view
+            self.reloadData()
+        }
+    }
+    
     // MARK: VIEW METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Slots_DATE"
         tableView.dataSource = self
-        
-
-        // Grab info from server
-        let network = NetworkManager()
-
-        network.getItems(db: .TimeSlots) {
-            json in
-            
-//            print(json)
-            
-            self.timeSlots = network.parseJSONIntoObjects(type: .TimeSlots, json: json) as! [TimeSlot]
-            // TODO: Get and Parse data for view
-            print(self.timeSlots)
-            self.reloadData()
-        }
+        self.getData()
     }
  
     
