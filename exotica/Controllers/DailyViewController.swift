@@ -38,7 +38,7 @@ class DailyViewController: UIViewController, UITableViewDataSource, UITableViewD
     // MARK: VIEW METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Slots_DATE"
+        self.navigationItem.title = "Exotica Roster"
         tableView.dataSource = self
         self.getData()
     }
