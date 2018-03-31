@@ -44,7 +44,7 @@ class DailyViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
  
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 200
     }
     // MARK: TABLE VIEW DELEGATE METHODS
     func numberOfSections(in tableView: UITableView) -> Int {

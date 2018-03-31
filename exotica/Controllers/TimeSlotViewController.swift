@@ -24,6 +24,12 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var downstairsBoothTextField: UITextField!
     @IBOutlet var downstairsBarTextField: UITextField!
     @IBOutlet var updateButton: UIButton!
+    @IBOutlet var FFSLabel: UILabel!
+    @IBOutlet var FFPLabel: UILabel!
+    @IBOutlet var GFSLabel: UILabel!
+    @IBOutlet var GFSTwoLabel: UILabel!
+    @IBOutlet var GFBoothLabel: UILabel!
+    @IBOutlet var GFBarLabel: UILabel!
     
     var timeSlotTitleVar = ""
     var upstairsMainTextFieldVar: String = ""
@@ -36,6 +42,29 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     func setupView() {
         self.updateButton.layer.cornerRadius = 5;
         self.updateButton.layer.masksToBounds = true;
+        
+        self.timeSlotTitle.layer.cornerRadius = 5;
+        self.timeSlotTitle.layer.masksToBounds = true;
+        
+        self.FFSLabel.layer.cornerRadius = 5;
+        self.FFSLabel.layer.masksToBounds = true;
+        
+        self.FFPLabel.layer.cornerRadius = 5;
+        self.FFPLabel.layer.masksToBounds = true;
+        
+        self.GFSLabel.layer.cornerRadius = 5;
+        self.GFSLabel.layer.masksToBounds = true;
+        
+        self.GFSTwoLabel.layer.cornerRadius = 5;
+        self.GFSTwoLabel.layer.masksToBounds = true;
+        
+        self.GFBoothLabel.layer.cornerRadius = 5;
+        self.GFBoothLabel.layer.masksToBounds = true;
+        
+        self.GFBarLabel.layer.cornerRadius = 5;
+        self.GFBarLabel.layer.masksToBounds = true;
+        
+        
     }
     
     override func viewDidLoad() {

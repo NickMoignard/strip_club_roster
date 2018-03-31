@@ -36,21 +36,9 @@ class TimeSlotTableViewCell: UITableViewCell {
         self.timeLabel.layer.cornerRadius = 5;
         self.timeLabel.layer.masksToBounds = true;
         
-        self.upstairsMain.layer.cornerRadius = 5;
+        self.upstairsMain.layer.cornerRadius = 5
         self.upstairsMain.layer.masksToBounds = true;
-        
-        self.upstairsSecondary.layer.cornerRadius = 5;
-        self.upstairsSecondary.layer.masksToBounds = true;
-        
-        self.downstairsOne.layer.cornerRadius = 5;
-        self.downstairsOne.layer.masksToBounds = true;
-        
-        self.downstairsTwo.layer.cornerRadius = 5;
-        self.downstairsTwo.layer.masksToBounds = true;
-        
-        self.downstairsBooth.layer.cornerRadius = 5;
-        self.downstairsBooth.layer.masksToBounds = true;
-        
+
         self.downstairsBar.layer.cornerRadius = 5;
         self.downstairsBar.layer.masksToBounds = true;
         
