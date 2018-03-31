@@ -9,13 +9,14 @@
 import UIKit
 import SwiftyJSON
 
-class DailyViewController: UIViewController, UITableViewDataSource {
+class DailyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: DATA MEMBERS
     private var timeSlots: [TimeSlot] = [], dancers: [Dancer] = []
     private var timeModel = TimeModel()
     private var sections = [Date: [TimeSlot]]()
     @IBOutlet weak var tableView: UITableView!
+    
 
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,12 +43,15 @@ class DailyViewController: UIViewController, UITableViewDataSource {
         self.getData()
     }
  
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
     // MARK: TABLE VIEW DELEGATE METHODS
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
+    
 //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //        var dates = sections.keys.sorted()
 //        return "\(timeModel.dateToString(dates[section]))"
@@ -65,6 +69,11 @@ class DailyViewController: UIViewController, UITableViewDataSource {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TimeSlotTableViewCell
         cell.timeSlot = timeSlots[indexPath.row]
+        
+        
+        
+        
+        
         var cellText = ""
 
         cellText += timeModel.dateToString(timeSlots[indexPath.row].time)
@@ -104,7 +113,13 @@ class DailyViewController: UIViewController, UITableViewDataSource {
             let vc = segue.destination as? TimeSlotViewController
             var senderCell = sender as! TimeSlotTableViewCell
             vc?.timeSlot = senderCell.timeSlot
-            vc?.timeSlotTitleVar = senderCell.timeLabel.text != nil ? senderCell.timeLabel.text! : ""
+            
+            if let _text = senderCell.timeLabel.text {
+                vc?.timeSlotTitleVar = _text
+            } else {
+                vc?.timeSlotTitleVar = ""
+            }
+
             
             
         

@@ -23,6 +23,7 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var downstairsTwoTextField: UITextField!
     @IBOutlet var downstairsBoothTextField: UITextField!
     @IBOutlet var downstairsBarTextField: UITextField!
+    @IBOutlet var updateButton: UIButton!
     
     var timeSlotTitleVar = ""
     var upstairsMainTextFieldVar: String = ""
@@ -32,11 +33,15 @@ class TimeSlotViewController: UIViewController, UITextFieldDelegate {
     var downstairsBoothTextFieldVar: String = ""
     var downstairsBarTextFieldVar: String = ""
     
-    
+    func setupView() {
+        self.updateButton.layer.cornerRadius = 5;
+        self.updateButton.layer.masksToBounds = true;
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setText()
+        setupView()
         timeSlotTitle.text = timeSlotTitleVar
         upstairsMainTextField.text = upstairsMainTextFieldVar
         upstairsSecondaryTextField.text = upstairsSecondaryTextFieldVar
